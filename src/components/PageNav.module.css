@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 29, 0, 0.515);
+  padding: 1rem 4rem;
 }
 
 .nav ul {
@@ -18,11 +20,14 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease-in;
 }
 
 /* CSS Modules feature */
 .nav a:global(.active) {
   color: var(--color-brand--2);
+  border-color: var(--color-light--2);
 }
 
 a.ctaLink:link,
